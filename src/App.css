@@ -1,38 +1,148 @@
-.App {
-  text-align: center;
+.wrapper {
+    width: 100%;
+    height: 98vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.greyTypo {
+    font-style: normal;
+    font-weight: 400;
+    color: rgba(153, 153, 153, 1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.login-buttons__FbookAndGoogle button {
+    background-color: white;
+    font-size: 14px;
+    padding: 17px;
+    margin: 8px;
+    min-width: 240px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid #E6E6E6;
+    box-sizing: border-box;
+    border-radius: 12px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.login-buttons__FbookAndGoogle img {
+    margin-right: 16px;
 }
 
-.App-link {
-  color: #61dafb;
+.header {
+    display: flex;
+    align-items: center;
+    height: 53px;
+    position: sticky;
+    justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hello {
+    margin: 12px;
+    text-align: center;
+}
+.block__error{
+    text-align: center;
+    font-weight: 400 ;
+    font-size: 14px;
+    color: rgba(251, 36, 36, 1);
+}
+.logo {
+    position: fixed;
+    left: 54px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial;
+    color: #F90043;
+}
+
+.button__one {
+    font-size: 14px;
+    font-weight: 700;
+    border: #4E74F5;
+    border-radius: 65px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 28px;
+    padding-right: 28px;
+    background-color: #4E74F5;
+    color: white;
+}
+
+.block__no-style {
+    margin: 24px
+}
+
+.other {
+    position: fixed;
+    right: 54px;
+}
+
+.button__wrapper {
+
+    margin: auto;
+}
+
+.main__container {
+    height: 93vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading {
+    text-align: center;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 600;
+}
+.block__input{
+    display: flex;
+    justify-content: center;
+}
+.error{
+    border: 1px solid rgba(251, 36, 36, 1)!important;
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+.block__input input {
+    outline: none;
+    font-weight: 600;
+    font-size: 14px;
+    min-width: 496px;
+    min-height: 56px ;
+    border: 1px solid #E6E6E6;
+    box-sizing: border-box;
+    border-radius: 12px;
+    padding-left: 20px;
+    margin:8px;
+
+}
+.block__input input:focus {
+    color: black;
+    border: 1px solid rgba(78, 116, 245, 1);
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+.block__input input::placeholder {
+    color: rgba(230, 230, 230, 1);
+}
+.button__login{
+    min-width: 496px;
+    margin: 16px;
+}
+.btn-login__container{
+    display: flex;
+    justify-content: center;
+}
+.forgot {
+    display: flex;
+    justify-content: center;
+}
+.forgot a{
+    color: rgba(78, 116, 245, 1);
+   font-size: 14px;
+    font-weight: 700;
+}
+@media screen and (max-width:882px){
+
 }
