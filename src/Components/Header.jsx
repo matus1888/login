@@ -1,19 +1,37 @@
 import React from 'react';
+import {withRouter} from "react-router-dom";
 
-const Header = () => {
+const Header = ({location, history}) => {
+    let isRegistrationOrLoginForm = (location.pathname === "/") || (location.pathname === "/registration")
+    let isConfirmedPage = !!((location.pathname === "/confirm")||(location.pathname==="/notgetmail"))
+    let getButtonText = location.pathname === '/' ? "Регистрация" : location.pathname === '/registration' ? "Войти" : ''
+    let getButtonLink = location.pathname === '/' ? "/registration" : location.pathname === '/registration' ? "/" : '#'
+    let regOrLogin=location.pathname==='/registration'
+    let outClick=()=>{history.push("/")}
+
     return (
         <header className="header">
-            <span className="logo">LIVEDUNE</span>
-            <span className="other">
+            <span className="logo"
+                  onClick={() => history.push('/')}>LIVEDUNE</span>
+            {isRegistrationOrLoginForm && <span className="other">
                 <span className="block__no-style greyTypo">
-                    У вас нет  аккаунта?
+                    {regOrLogin?"Уже есть аккаунт?":"У вас нет  аккаунта?"}
                 </span>
                 <span className="button__wrapper">
-                    <button className="button__one">Регистрация</button>
+                    <button
+                        onClick={() => history.push(getButtonLink)}
+                        className="button__one">{getButtonText}</button>
+                </span>
+            </span>}
+            {isConfirmedPage &&
+            <span className="other">
+                <span onClick={outClick} className="block__no-style greyTypo">
+                    Выйти
                 </span>
             </span>
+            }
         </header>
     );
 };
 
-export default Header;
+export default withRouter(Header);
