@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/login/static/css/main.32bde68b.chunk.css",
+    "main.js": "/login/static/js/main.a4a92ac3.chunk.js",
+    "main.js.map": "/login/static/js/main.a4a92ac3.chunk.js.map",
+    "runtime-main.js": "/login/static/js/runtime-main.587f449a.js",
+    "runtime-main.js.map": "/login/static/js/runtime-main.587f449a.js.map",
+    "static/js/2.06ae2da4.chunk.js": "/login/static/js/2.06ae2da4.chunk.js",
+    "static/js/2.06ae2da4.chunk.js.map": "/login/static/js/2.06ae2da4.chunk.js.map",
+    "static/js/3.d4af04b7.chunk.js": "/login/static/js/3.d4af04b7.chunk.js",
+    "static/js/3.d4af04b7.chunk.js.map": "/login/static/js/3.d4af04b7.chunk.js.map",
+    "index.html": "/login/index.html",
+    "static/css/main.32bde68b.chunk.css.map": "/login/static/css/main.32bde68b.chunk.css.map",
+    "static/js/2.06ae2da4.chunk.js.LICENSE.txt": "/login/static/js/2.06ae2da4.chunk.js.LICENSE.txt",
+    "static/media/Ellipse.e2ae97ca.svg": "/login/static/media/Ellipse.e2ae97ca.svg",
+    "static/media/Google__G__Logo 1.aa3e8370.svg": "/login/static/media/Google__G__Logo 1.aa3e8370.svg",
+    "static/media/facebookLogo.accbd24a.svg": "/login/static/media/facebookLogo.accbd24a.svg",
+    "static/media/lock.525cd4fc.svg": "/login/static/media/lock.525cd4fc.svg",
+    "static/media/index.css": "/login/static/media/opensanssemibolditalic.e5976a30.ttf",
+    "static/media/send.264fb820.svg": "/login/static/media/send.264fb820.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.587f449a.js",
+    "static/js/2.06ae2da4.chunk.js",
+    "static/css/main.32bde68b.chunk.css",
+    "static/js/main.a4a92ac3.chunk.js"
+  ]
+}
