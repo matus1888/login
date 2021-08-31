@@ -19,8 +19,13 @@ const LoginForm = ({history}) => {
     let validateData=()=>{
         if (state.name===''&&state.password===''){
             setError("Введите email, Введите пароль")
-        }else
-        {regExp.test(state.name)?setError(undefined):setError("Неверный email или пароль")}
+        }else if(!(regExp.test(state.name))){
+        setError("Неверный email или пароль")
+        }else if (state.name==="example@example.com"&&state.password==="password2021") {
+            history.push("/goto")
+        }else{
+            setError("Не предусмотренный пользователь")
+        }
     }
     let EnterListener=(event)=>{
         if(event.key==='Enter'){

@@ -19,14 +19,15 @@ const ForgetMain = ({history}) => {
     }
     let regExp = /^([A-Za-z0-9_\-.])+@([A-Za-z0-9_\-.])+\.([A-Za-z]{2,4})$/;
     let validateData=()=>{
-        if(regExp.test(state.mail)) {
+        if(regExp.test(state.mail)&&
+            (state.mail==="example@example.com")) {
             setError(undefined)
             setState({...state, animation: true})
             setTimeout(() =>
                     setState({...state, sendOk: true, animation: false})
                 , 2000)
         }else {
-            setError("Неверный email или пароль")
+            setError("Неверный email")
         }
     }
     let EnterListener=(event)=>{
