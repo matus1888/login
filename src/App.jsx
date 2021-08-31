@@ -7,6 +7,7 @@ import {Route} from "react-router-dom";
 import ConfirmMailMain from "./Components/MainVariants/ConfirmMailMain";
 import DidntMailMain from "./Components/MainVariants/DidntMailMain";
 import ForgetMain from "./Components/MainVariants/ForgetMain";
+import MainApp from "./Components/MainApp";
 
 function App() {
     const [state,setState]=useState('')
@@ -18,6 +19,7 @@ function App() {
             <Route exact path={'/confirm'}><ConfirmMailMain name={state}/></Route>
             <Route exact path={'/notgetmail'}><DidntMailMain/></Route>
             <Route exact path={'/forget'}><ForgetMain/></Route>
+            <Route exact path={'/goto'}><MainApp /></Route>
 
         </div>
     );
